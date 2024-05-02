@@ -11,7 +11,7 @@ public class GuildedRose {
     public void updateItems(){
         Arrays.stream(items).forEach(this::updateItem);
     }
-    public void updateItem(Updateable item){
+    private void updateItem(Updateable item){
         item.updateQuality();
         item.updateSellIn();
     }

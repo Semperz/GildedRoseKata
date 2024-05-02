@@ -10,4 +10,14 @@ public class AgedBrie implements Updateable{
     public void updateSellIn() {
 
     }
+
+    @Override
+    public int getQuality() {
+        return 0;
+    }
+
+    @Override
+    public int getSellIn() {
+        return 0;
+    }
 }
