@@ -23,10 +23,11 @@ public class NormalItem extends Item implements Updateable{
     public void updateSellIn() {
         this.sellIn -= 1;
     }
-
+    @Override
     public int getQuality() {
         return quality;
     }
+    @Override
     public int getSellIn() {
         return this.sellIn;
     }
