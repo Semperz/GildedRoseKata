@@ -15,4 +15,26 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.2.2</version>
+          <configuration>
+            <archive>
+              <manifest>
+                <addClasspath>true</addClasspath>
+                <mainClass>edu.badpals.GildedRose.Main</mainClass>
+              </manifest>
+              <manifestEntries>
+                <url>${project.url}</url>
+              </manifestEntries>
+            </archive>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
 </project>
+
