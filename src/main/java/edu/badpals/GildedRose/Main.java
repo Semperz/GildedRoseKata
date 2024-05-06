@@ -15,7 +15,7 @@ public class Main {
                 new BackstagePass("Backstage passes to a TAFKAL80ETC concert", 5, 49),
                 new Conjured("Conjured Mana Cake", 3, 6) };
 
-        GuildedRose app = new GuildedRose(items);
+        GildedRose app = new GildedRose(items);
 
         int days = 2;
         if (args.length > 0) {

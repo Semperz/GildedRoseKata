@@ -2,10 +2,10 @@ package edu.badpals.GildedRose;
 
 import java.util.Arrays;
 
-public class GuildedRose {
+public class GildedRose {
     Updateable[] items = null;
 
-    public GuildedRose(Updateable[] items) {
+    public GildedRose(Updateable[] items) {
         this.items = items;
     }
     public void updateItems(){

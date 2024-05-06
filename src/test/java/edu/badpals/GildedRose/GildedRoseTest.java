@@ -4,8 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class GuildedRoseTest {
-    GuildedRose app = null;
+public class GildedRoseTest {
+    GildedRose app = null;
     @Test
     public void updateItemsNormalItemsTest(){
         Updateable[] items = new Updateable[]{
@@ -13,14 +13,14 @@ public class GuildedRoseTest {
                 new NormalItem("Dexterity Vest", 0, 8)
         };
 
-        app = new GuildedRose(items);
+        app = new GildedRose(items);
         for (int day = 5; day > 0; day--){ //updates the sellIn
             app.updateItems();
             assertEquals(day+1, app.items[0].getSellIn());
             assertEquals(day-6, app.items[1].getSellIn());
         }
 
-        app = new GuildedRose(items);
+        app = new GildedRose(items);
         for (int day = 2; day > 0; day--){ //updates the quality
             app.updateItems();
             assertEquals(day+1, app.items[0].getQuality());
