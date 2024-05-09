@@ -1,15 +1,16 @@
 package edu.badpals.GildedRose;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class GildedRose {
-    Updateable[] items = null;
+    List<Updateable> items = null;
 
-    public GildedRose(Updateable[] items) {
+    public GildedRose(List<Updateable> items) {
         this.items = items;
     }
     public void updateItems(){
-        Arrays.stream(items).forEach(this::updateItem);
+        items.forEach(this::updateItem);
     }
     private void updateItem(Updateable item){
         item.updateQuality();
