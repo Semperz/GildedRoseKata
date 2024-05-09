@@ -12,6 +12,10 @@ public class GildedRose {
     public void updateItems(){
         items.forEach(this::updateItem);
     }
+
+    public void addItem(Updateable item){
+        items.add(item);
+    }
     private void updateItem(Updateable item){
         item.updateQuality();
         item.updateSellIn();
