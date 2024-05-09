@@ -8,16 +8,13 @@ public class BackstagePass extends Item implements Updateable {
     @Override
     public void updateQuality() {
         if (sellIn > 10) {
-            quality += 1;
+            quality = Math.min(quality+1,50);
         } else if (sellIn > 5) {
-            quality += 2;
+            quality = Math.min(quality+2,50);
         } else if (sellIn >= 0){
-            quality += 3;
+            quality = Math.min(quality+3,50);
         } else{
             quality = 0;
-        }
-        if (quality > 50) {
-            quality = 50;
         }
     }
 
