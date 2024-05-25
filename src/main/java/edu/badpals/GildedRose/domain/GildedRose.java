@@ -1,6 +1,5 @@
-package edu.badpals.GildedRose;
+package edu.badpals.GildedRose.domain;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class GildedRose {

@@ -1,5 +1,8 @@
-package edu.badpals.GildedRose;
+package edu.badpals.GildedRose.domain;
 
+import edu.badpals.GildedRose.domain.GildedRose;
+import edu.badpals.GildedRose.domain.NormalItem;
+import edu.badpals.GildedRose.domain.Updateable;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

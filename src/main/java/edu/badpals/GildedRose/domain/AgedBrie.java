@@ -1,27 +1,26 @@
-package edu.badpals.GildedRose;
+package edu.badpals.GildedRose.domain;
 
-public class Conjured extends Item implements Updateable{
+public class AgedBrie extends Item implements Updateable {
 
-    public Conjured(String name, int sellIn, int quality) {
+    public AgedBrie(String name, int sellIn, int quality) {
         super(name, sellIn, quality);
     }
 
     @Override
     public void updateQuality() {
-        if (sellIn < 0){
-            quality -= 4;
+        if (sellIn < 0 ){
+            quality += 2;
         } else{
-            quality -= 2;
+            quality += 1;
         }
-        if (quality < 0){
-            quality  = 0;
+        if (quality > 50){
+            quality = 50;
         }
     }
 
-
     @Override
     public void updateSellIn() {
-        sellIn-=1;
+        this.sellIn -= 1;
     }
 
     @Override

@@ -1,5 +1,7 @@
-package edu.badpals.GildedRose;
+package edu.badpals.GildedRose.domain;
 
+import edu.badpals.GildedRose.domain.Sulfuras;
+import edu.badpals.GildedRose.domain.Updateable;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

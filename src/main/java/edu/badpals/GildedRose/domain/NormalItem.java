@@ -1,6 +1,6 @@
-package edu.badpals.GildedRose;
+package edu.badpals.GildedRose.domain;
 
-public class NormalItem extends Item implements Updateable{
+public class NormalItem extends Item implements Updateable {
 
     public NormalItem(String name, int sellIn, int quality) {
         super(name, sellIn, quality);

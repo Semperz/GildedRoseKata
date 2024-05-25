@@ -1,6 +1,6 @@
-package edu.badpals.GildedRose;
+package edu.badpals.GildedRose.domain;
 
-public class Sulfuras extends Item implements Updateable{
+public class Sulfuras extends Item implements Updateable {
 
     public Sulfuras(String name, int sellIn, int quality) {
         super(name, sellIn, quality);

@@ -1,38 +1,35 @@
-package edu.badpals.GildedRose;
+package edu.badpals.GildedRose.domain;
 
+import edu.badpals.GildedRose.domain.Conjured;
+import edu.badpals.GildedRose.domain.Updateable;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class AgedBrieTest {
-
+public class ConjuredTest {
     @ParameterizedTest
     @CsvSource({
-            "0,  1, 2",
-            "0,  50, 50",
-            "-1,  1, 3",
-            "-1,  49, 50"
+            "1,  2, 0",
+            "-1,  4, 0",
+            "-1,  1, 0"
     })
     public void qualityTest(int sellIn, int quality, int resoult){
-        Updateable item = new AgedBrie("Aged Brie", sellIn, quality);
+        Updateable item = new Conjured("Conjured Mana Cake", sellIn, quality);
         item.updateQuality();
         assertEquals(resoult, item.getQuality());
     }
     @Test
     public void updateSellInTest(){
-        Updateable item = new AgedBrie("Aged Brie", 0, 2);
+        Updateable item = new Conjured("Conjured Mana Cake", 0, 2);
         item.updateSellIn();
         assertEquals(-1, item.getSellIn()); //Actual Item quality = 2, sellIn = -1
     }
 
     @Test
     public void getNameTest(){
-        AgedBrie item = new AgedBrie("Aged Brie", 0, 0);
-        assertEquals("Aged Brie", item.getName());
+        Conjured item = new Conjured("Conjured Mana Cake", 0, 0);
+        assertEquals("Conjured Mana Cake", item.getName());
     }
-
-
 }
-

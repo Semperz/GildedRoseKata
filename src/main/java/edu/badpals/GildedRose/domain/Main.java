@@ -1,4 +1,4 @@
-package edu.badpals.GildedRose;
+package edu.badpals.GildedRose.domain;
 
 import java.util.ArrayList;
 import java.util.List;

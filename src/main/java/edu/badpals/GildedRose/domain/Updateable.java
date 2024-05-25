@@ -1,4 +1,4 @@
-package edu.badpals.GildedRose;
+package edu.badpals.GildedRose.domain;
 
 public interface Updateable {
 

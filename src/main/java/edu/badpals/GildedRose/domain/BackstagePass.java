@@ -1,4 +1,4 @@
-package edu.badpals.GildedRose;
+package edu.badpals.GildedRose.domain;
 
 public class BackstagePass extends Item implements Updateable {
     public BackstagePass(String name, int sellIn, int quality) {

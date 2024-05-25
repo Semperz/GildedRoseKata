@@ -1,5 +1,6 @@
-package edu.badpals.GildedRose;
+package edu.badpals.GildedRose.domain;
 
+import edu.badpals.GildedRose.domain.NormalItem;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
