@@ -2,8 +2,6 @@ package edu.badpals.GildedRose.domain;
 
 import jakarta.persistence.*;
 
-import java.math.BigInteger;
-
 @Entity
 @Table(name="t_items")
 public class Item{
@@ -31,7 +29,7 @@ public class Item{
 
     @Override
    public String toString() {
-        return this.name + ", " + this.sellIn + ", " + this.quality;
+        return this.name + ", " + this.quality + ", " + this.sellIn;
     }
 
     public void setId(Long id) {
