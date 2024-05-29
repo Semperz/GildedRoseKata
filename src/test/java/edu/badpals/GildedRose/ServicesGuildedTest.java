@@ -9,8 +9,6 @@ import jakarta.transaction.Transactional;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.math.BigInteger;
-
 @QuarkusTest
 public class ServicesGuildedTest {
 

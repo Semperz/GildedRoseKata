@@ -11,4 +11,5 @@ insert into
 values
     (1000L,'+5 Dexterity Vest', 20, 12),
     (2000L,'Elixir of the Mongoose', 7, 15),
+    (4000L,'Elixir of the Mongoose', 10, 5),
     (3000L,'AgedBrie', 10, 3);
