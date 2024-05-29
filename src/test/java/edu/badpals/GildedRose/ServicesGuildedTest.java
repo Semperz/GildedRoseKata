@@ -9,6 +9,8 @@ import jakarta.transaction.Transactional;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 @QuarkusTest
 public class ServicesGuildedTest {
 
@@ -47,6 +49,19 @@ public class ServicesGuildedTest {
         Assertions.assertThat(elixir.name).isEmpty();
         Assertions.assertThat(elixir.quality).isZero();
         Assertions.assertThat(elixir.sellIn).isZero();
+    }
+
+    @Test
+    public void test_carga_items(){
+        Assertions.assertThat(servicio).isNotNull();
+
+        List<Item> items = servicio.cargaItems("Elixir of the Mongoose");
+        Assertions.assertThat(items).isNotEmpty().hasSize(2);
+        Assertions.assertThat(items.get(0)).hasFieldOrPropertyWithValue("name", "Elixir of the Mongoose");
+        Assertions.assertThat(items.get(1)).hasFieldOrPropertyWithValue("quality", 10);
+
+        // test no existe el item
+        Assertions.assertThat(servicio.cargaItems("Varita de Sauco")).isEmpty();
     }
 
     @Test
